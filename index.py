@@ -26,5 +26,5 @@ def contacto():
     return render_template('contacto.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port = 5017)
+    app.run(debug=True, port=int(os.getenv("PORT", 5017)))
     
